@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	 	<title>Quiz</title>
+	 	<link rel="stylesheet" type="text/css" href= "css/common.css">
+	 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+	</head>
+
+	<body>
+		<!-- Header of the page -->
+		<header>
+			<figure>
+				<i id = "threeLine" onclick = "displayMenu()" class="material-icons">dehaze</i>
+				<i id = "close" onclick = "closeMenu()" class="material-icons">close</i>
+				<a href="index.html"><i id = "logo" class="material-icons">all_inclusive</i></a>
+			</figure>
+			<nav>
+				<ul id = "navUl" class="clearfix">
+					<li><a class="navA" href="java.html">Programming 1</a></li>
+					<li><a class="navA" href="math.html">Math for Computing</a></li>
+					<li><a class="navA" href="networking.html">Intro Networking</a></li>
+					<li><a class="navA" href="Software_engineering.html">Software Engineering</a></li>
+					<li><a class="navA" href="java_quiz.html">Quizzes</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- main body of the page -->
+		<main>
+			<div id="main_img">
+			<blockquote>&ldquo;Develop a passion for learning. If you do, you will never cease to grow.&rdquo;</blockquote>
+			</div>
+			<h1 id="h1para">
+				Courses
+			</h1>
+			<div id = "container" class="clearfix">
+				<div class="gallery">
+					<img class="gallery_img" alt = "java" src="img/java.png">
+					<a href="java.html">Programming 1</a>
+					<p>This module will provide an intoduction to the principles of object-oriented programming</p>
+				</div>
+				<div class="gallery">
+					<img class="gallery_img" alt = "math" src="img/math.png">
+					<a href="math.html">Math for Computing</a>
+					<p>In this module you will learn new and useful methods in discrete mathematics</p>
+				</div>
+				<div class="gallery">
+					<img class="gallery_img" alt = "networking" src="img/networking.png">
+					<a href="networking.html">Intro to Networking</a>
+					<p>In this module you will learn the fundamentals of computer networking</p>
+				</div>
+				<div class="gallery">
+					<img class="gallery_img" alt = "Software Engineering" src="img/se.png">
+					<a href="Software_engineering.html">Software Engineering</a>
+					<p>This module will help you to build up an understanding that there is a lot
+					 more to software development than writing code</p> 
+				</div>
+			</div>
+		</main>
+		<!-- footer of the page -->
+		<footer>
+			<ul>
+				<li><a href="https://www.facebook.com" class="footerA" id="fb"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="https://www.twitter.com" class="footerA" id="twitter"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="http://www.youtube.com" class="footerA" id="youtube"><i class="fa fa-youtube"></i></a></li>
+				<li><a href="http://www.instagram.com" class="footerA" id="ig"><i class="fa fa-instagram"></i></a></li>
+			</ul>
+			<p id="copyright">&copy;2017. All rights reserved. Powered by Injera.</p>
+		</footer>
+		<script type="text/javascript" src = "js/common.js"></script>
+	</body>
+</html>

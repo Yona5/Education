@@ -1,0 +1,57 @@
+/*setting the property of the body*/
+body{
+	margin: 0px;
+	background-color: #E9EBEE;
+	font-family: raleway;
+}
+figure img{
+	display: none;
+}
+/*list of the navigation*/
+nav ul li{
+	list-style-type: none;
+	display: inline;
+}
+/*unordered list of the nav*/
+nav ul{
+	text-align:right;
+	margin-right: 10px;
+}
+/*a tags of the navigation*/
+.navA{
+	text-decoration: none;
+	color: grey;
+	padding: 20px;
+}
+.navA:hover{
+	background-color: white;
+	color:black;
+}
+#body_header{
+	position: relative;
+	background-image: url("../img/com.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	height: 200px;
+}
+#body_header h1 {
+	text-align: center;
+	margin-top: 0px;
+	position: relative;
+	top: 70px;
+	color: white;
+	font-size: 3em;
+}
+/*navigational aid*/
+#breadcrumb{
+	max-width: 50%;
+	margin:auto;
+	position: relative;
+    top: 80px;
+	text-align: center;
+	color:white;
+}
+#breadcrumb a{
+	text-decoration: none;
+	color: white;
+}

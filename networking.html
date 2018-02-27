@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	 	<title>Networking</title>
+	 	<link rel="stylesheet" type="text/css" href= "css/common.css">
+	 	<link rel="stylesheet" type="text/css" href="css/intro.css">
+	 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+	</head>
+	<body>
+		<!-- Header of the page -->
+		<header>
+			<figure>
+				<i id = "threeLine" onclick = "displayMenu()" class="material-icons">dehaze</i>
+				<i id = "close" onclick = "closeMenu()" class="material-icons">close</i>
+				<a href="index.html"><i id = "logo" class="material-icons">all_inclusive</i></a>
+			</figure>
+			<nav>
+				<ul id = "navUl" class="clearfix">
+					<li><a class="navA" href="java.html">Programming 1</a></li>
+					<li><a class="navA" href="math.html">Math for Computing</a></li>
+					<li><a class="navA" href="networking.html">Intro to Networking</a></li>
+					<li><a class="navA" href="Software_engineering.html">Software Engineering</a></li>
+					<li><a class="navA" href="java_quiz.html">Quizzes</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- main body of the page -->
+		<main>
+			<header id="body_header">
+				<h1>Networking</h1>
+				<div id="breadcrumb">
+				<a href="index.html">Home</a>
+				&gt;
+				<p>Networking</p>
+				</div>
+			</header>
+			<!-- a section containing a table and covered topics -->
+			<section>
+				<h2>Overview</h2>
+				<div class="main_section">
+					<p id="intro_para">In this module you will learn the fundamentals of computer 
+						networking and the impact that global communications has on the modern world. 
+						Using standard models such as the OSI and TCP/
+						IP models, you will investigate the technologies mapped to each layer and the 
+						interactions between these technologies at each layer.
+					</p>
+				</div>
+				<!-- table -->
+				<table class="main_section">
+					<tr>
+						<td><i class="material-icons">info_outline</i>Module Code</td>
+						<td>47N</td>
+					</tr>
+					<tr>
+						<td> <i class="material-icons">star_rate</i> Level</td>
+						<td>Beginner</td>
+					</tr>
+					<tr>
+						<td><i class="material-icons">access_time</i> Commitment</td>
+						<td>5 hours/week </td>
+					</tr>
+					<tr>
+						<td><i class="material-icons">description</i> Quiz</td>
+						<td>Yes</td>
+					</tr>
+				</table>
+				<h2>Covered Topics</h2>
+				<hr>
+				<!-- div containing covered topics -->
+				<div class="main_section">
+					<h2 class="sectionH2"><i class="material-icons">filter_list</i>Network Access </h2>
+					<p class="sub_topic"><a href="#">Physical Layer Protocols</a></p>
+					<p class="sub_topic"><a href="#">Network Media</a></p>
+					<p class="sub_topic"><a href="#">Data Link Layer Protocols</a></p>
+					<p class="sub_topic sub_topic_last"><a href="#">Media Access Control</a></p>
+				</div>
+				<hr>
+				<div class="main_section">
+					<h2 class="sectionH2"><i class="material-icons">code</i>Ethernet</h2>
+					<p class="sub_topic"><a href="#">Ethernet Protocol</a></p>
+					<p class="sub_topic"><a href="#">Address Resolution Protocol</a></p>
+					<p class="sub_topic"><a href="#">LAN Switches</a></p>
+					<p class="sub_topic sub_topic_last"><a href="#">Summary</a></p>
+				</div>
+				<hr>
+				<div class="main_section">
+					<h2 class="sectionH2"><i class="material-icons">class</i>Network Layer </h2>
+					<p class="sub_topic"><a href="#">Network Layer Protocols</a></p>
+					<p class="sub_topic"><a href="#">Routing</a></p>
+					<p class="sub_topic"><a href="#">Routers</a></p>
+					<p class="sub_topic sub_topic_last"><a href="#">Configuring a Cisco Router</a></p>
+				</div>
+				<hr>
+				<div class="main_section">
+					<h2 class="sectionH2"><i class="material-icons">note_add</i>IP Addressing </h2>
+					<p class="sub_topic"><a href="#">IPv4 Network Addresses</a></p>
+					<p class="sub_topic"><a href="#">IPv6 Network Addresses</a></p>
+					<p class="sub_topic"><a href="#">Connectivity Verification</a></p>
+					<p class="sub_topic sub_topic_last"><a href="#">Summary</a></p>
+				</div>
+				<!-- contact form -->
+				<div id="contact" class="main_section">
+					<p id="contactP">Module leader: Peter Parker</p>
+					<p>Email: <a href="mailto:webmaster@example.com">peter&commat;example.com</a></p>
+					<form action="recieved.php" method="post">
+						<input type="text" name="name" placeholder="Name" required><br>
+						<input type="email" name="email" placeholder="email" required><br>
+						<textarea placeholder="message" required></textarea><br>
+						<input type="submit" name="submit" value="submit">
+					</form>
+				</div>
+			</section>
+		</main>
+		<!-- footer of the page -->
+		<footer>
+			<ul>
+				<li><a href="https://www.facebook.com" class="footerA" id="fb"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="https://www.twitter.com" class="footerA" id="twitter"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="http://www.youtube.com" class="footerA" id="youtube"><i class="fa fa-youtube"></i></a></li>
+				<li><a href="http://www.instagram.com" class="footerA" id="ig"><i class="fa fa-instagram"></i></a></li>
+			</ul>
+			<p id="copyright">&copy;2017. All rights reserved. Powered by Injera.</p>
+		</footer>
+		<script type="text/javascript" src = "js/common.js"></script>
+	</body>
+
+</html>

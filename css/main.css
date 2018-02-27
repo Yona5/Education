@@ -1,0 +1,103 @@
+/*header image*/
+#main_img{
+	background-image: url("../img/education5.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	height: 400px;
+}
+#main_img blockquote{
+	max-width: 90%;
+	margin: auto;
+	font-size: 4em;
+	color: white;
+	position: relative;
+	top: 25%;
+}
+#h1para{
+	text-align: center;
+	font-size: 3em;
+	color:#3c3f3f;
+}
+/*courses section*/
+.gallery{
+	width: 50%;
+	float: left;
+	text-align:center;
+}
+/*clearing float*/
+.clearfix::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+/*courses images*/
+.gallery_img{
+	width: 20%;
+	height: 20%;
+	margin-top: 20px;
+}
+.gallery p{
+	max-width: 70%;
+	margin: auto;
+	padding-bottom: 20px;
+	color: grey;
+}
+/*links to courses*/
+.gallery a{
+	display: block;
+	text-decoration: none;
+	font-size: 2em;
+	color:#3c3f3f;
+	max-width: 50%;
+	margin:auto;
+}
+.gallery a:hover{
+	text-decoration: underline;
+}
+@media screen and (max-width: 936px){
+	#logo{
+	display: none;
+	}
+	#main_img blockquote{
+		font-size: 2em;
+	}
+	#h1para{
+		font-size: 35px;
+	}
+	/*menu*/
+	#threeLine{
+		display: block;	
+	}
+	#threeLine:hover, #close:hover{
+		color: black;
+		cursor:pointer;
+	}
+	/*navigation unorder list*/
+	#navUl{
+		display: none;
+	}
+	/*course section*/
+	.gallery{
+		background-color: white;
+		clear:both;
+		width: 100%;	
+		margin-top: 10px;
+		border-radius: 3px;
+		border-color: grey;
+	}
+	#container{
+		max-width: 90%;
+		margin: auto;
+	}
+	.gallery a{
+		font-size: 1.5em;
+	}
+	footer{
+		margin-top: 10px;
+
+	}
+	/*a tags of the footer*/
+	.footerA{
+		color:#3c3f3f;
+	}
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	 	<title>Software Engineering</title>
+	 	<link rel="stylesheet" type="text/css" href= "css/common.css">
+	 	<link rel="stylesheet" type="text/css" href="css/intro.css">
+	 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+	</head>
+
+	<body>
+		<!-- Header of the page -->
+		<header>
+			<figure>
+				<i id = "threeLine" onclick = "displayMenu()" class="material-icons">dehaze</i>
+				<i id = "close" onclick = "closeMenu()" class="material-icons">close</i>
+				<a href="index.html"><i id = "logo" class="material-icons">all_inclusive</i></a>
+			</figure>
+			<nav>
+				<ul id = "navUl" class="clearfix">
+					<li><a class="navA" href="java.html">Programming 1</a></li>
+					<li><a class="navA" href="math.html">Math for Computing</a></li>
+					<li><a class="navA" href="networking.html">Intro to Networking</a></li>
+					<li><a class="navA" href="Software_engineering.html">Software Engineering</a></li>
+					<li><a class="navA" href="java_quiz.html">Quizzes</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- main body of the page -->
+		<main>
+			<header id="body_header">
+				<h1>Software Engineering</h1>
+				<div id="breadcrumb">
+				<a href="index.html">Home</a>
+				&gt;
+				<p>Software Engineering</p>
+				</div>
+			</header>
+			<!-- a section containing a table and covered topics -->
+			<section>
+				<h2>Overview</h2>
+				<div class="main_section">
+					<p id="intro_para">
+					This reading will help you to built up an understanding that there 
+					is a lot more to software development than writing code! To help you
+					 put the ideas that you are reading about into practice you will have Lab 
+					 and Tutorial exercises to complete each week.
+					</p>
+				</div>
+				<!-- table -->
+				<table class="main_section">
+					<tr>
+						<td><i class="material-icons">info_outline</i>Module Code</td>
+						<td>47S</td>
+					</tr>
+					<tr>
+						<td> <i class="material-icons">star_rate</i> Level</td>
+						<td>Beginner</td>
+					</tr>
+					<tr>
+						<td><i class="material-icons">access_time</i> Commitment</td>
+						<td>5 hours/week </td>
+					</tr>
+					<tr>
+						<td><i class="material-icons">description</i> Quiz</td>
+						<td>Yes</td>
+					</tr>
+				</table>
+				<h2>Covered Topics</h2>
+				<hr>
+				<!-- div containing covered topics -->
+				<div class="main_section">
+					<h2 class="sectionH2"><i class="material-icons">filter_list</i>Software Processes </h2>
+					<p class="sub_topic"><a href="#">Software process models</a></p>
+					<p class="sub_topic"><a href="#">Process activities</a></p>
+					<p class="sub_topic"><a href="#">Coping with change</a></p>
+					<p class="sub_topic sub_topic_last"><a href="#">Process improvement</a></p>
+				</div>
+				<hr>
+				<div class="main_section">
+					<h2 class="sectionH2"><i class="material-icons">code</i>Agile Software Development </h2>
+					<p class="sub_topic"><a href="#">Agile methods</a></p>
+					<p class="sub_topic"><a href="#">Agile development techniques</a></p>
+					<p class="sub_topic"><a href="#">Agile project management</a></p>
+					<p class="sub_topic sub_topic_last"><a href="#">Scaling agile methods</a></p>
+				</div>
+				<hr>
+				<div class="main_section">
+					<h2 class="sectionH2"><i class="material-icons">class</i>Requirements Engineering </h2>
+					<p class="sub_topic"><a href="#">Functional and non-functional requirements</a></p>
+					<p class="sub_topic"><a href="#">Requirements engineering processes</a></p>
+					<p class="sub_topic"><a href="#"> Requirements elicitation</a></p>
+					<p class="sub_topic sub_topic_last"><a href="#">Requirements specification</a></p>
+				</div>
+				<hr>
+				<div class="main_section">
+					<h2 class="sectionH2"><i class="material-icons">note_add</i> System Modelling </h2>
+					<p class="sub_topic"><a href="#">Use case modelling</a></p>
+					<p class="sub_topic"><a href="#">Activity modelling</a></p>
+					<p class="sub_topic"><a href="#">Database design</a></p>
+					<p class="sub_topic sub_topic_last"><a href="#">Scope of variables</a></p>
+				</div>
+				<!-- contact form -->
+				<div id="contact" class="main_section">
+					<p id="contactP">Module leader: Peter Parker</p>
+					<p>Email: <a href="mailto:webmaster@example.com">peter&commat;example.com</a></p>
+					<form action="recieved.php" method="post">
+						<input type="text" name="name" placeholder="Name" required><br>
+						<input type="email" name="email" placeholder="email" required><br>
+						<textarea placeholder="message" required></textarea><br>
+						<input type="submit" name="submit" value="submit">
+					</form>
+				</div>
+			</section>
+		</main>
+		<!-- footer of the page -->
+		<footer>
+			<ul>
+				<li><a href="https://www.facebook.com" class="footerA" id="fb"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="https://www.twitter.com" class="footerA" id="twitter"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="http://www.youtube.com" class="footerA" id="youtube"><i class="fa fa-youtube"></i></a></li>
+				<li><a href="http://www.instagram.com" class="footerA" id="ig"><i class="fa fa-instagram"></i></a></li>
+			</ul>
+			<p id="copyright">&copy;2017. All rights reserved. Powered by Injera.</p>
+		</footer>
+		<script type="text/javascript" src = "js/common.js"></script>
+	</body>
+
+</html>

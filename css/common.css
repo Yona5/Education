@@ -1,0 +1,100 @@
+/*sets font, bg color, & margin of the page*/
+body{
+	margin: 0px;
+	background-color: #E9EBEE;
+	font-family: raleway;
+}
+header{
+	position: relative;
+}
+/*sets the proerties of the logo*/
+#logo{
+	position: absolute;
+	left: 35px;
+	bottom:10px;
+	font-size: 40px;
+	color:#5382A1;
+}
+/*menu for different screen size*/
+#threeLine, #close{
+	color:grey;
+	font-size: 3em;
+	display: none;
+	width:50px;
+}
+/*navigation*/
+#navUl li{
+	list-style-type: none;
+	display: inline;
+}
+/*unordered list of the navigation*/
+#navUl{
+	text-align:right;
+	margin-right: 10px;
+	padding: 20px;
+}
+/*a tags of the nav*/
+.navA{
+	text-decoration: none;
+	color: grey;
+	padding: 20px;
+}
+/*hover effects*/
+.navA:hover{
+	background-color: white;
+	color: black;
+	border-radius: 5%;
+}
+/*sets the property of the footer*/
+footer{
+	background-color: white;
+	padding:10px 0 10px 0;
+}
+/*unordered lists of the footer*/
+footer ul{
+	margin: 0px;
+	padding-left: 0px;
+	text-align: center;
+}
+/*a tags of the footer*/
+.footerA{
+	text-decoration: none;
+	color: grey;
+	font-size: 15px;
+}
+/*lists of the footers*/
+footer ul li{
+	list-style-type: none;
+	display: inline;
+}
+/*social media icons*/
+.footerA i {
+	font-size: 19px;
+	margin-right: 3px;
+	margin-top: 4px;
+}
+/*hover effects on the icons*/
+#fb:hover{
+	color: #3b5998;
+}
+#twitter:hover{
+	color: #00aced;
+}
+#youtube:hover{
+	color: #b31217;
+}
+#ig:hover{
+	color: #8a3ab9;
+}
+#footerPara{
+	margin:0px;
+	color: grey;
+	font-size: 15px;
+	text-align: center;
+}
+/*the last section of the footer*/
+#copyright{
+	font-size: 10px;
+	text-align: center;
+	color:grey;
+}

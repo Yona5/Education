@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	 	<title>Java Lessons</title>
+	 	<link rel="stylesheet" type="text/css" href= "css/common.css">
+	 	<link rel="stylesheet" type="text/css" href="css/lessons.css">
+	 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+	</head>
+
+	<body>
+		<!-- Header of the page -->
+		<header>
+			<figure>
+				<i id = "threeLine" onclick = "displayMenu()" class="material-icons">dehaze</i>
+				<i id = "close" onclick = "closeMenu()" class="material-icons">close</i>
+				<a href="index.html"><i id = "logo" class="material-icons">all_inclusive</i></a>
+			</figure>
+			<nav>
+				<ul id = "navUl" class="clearfix">
+					<li><a class="navA" href="java.html">Programming 1</a></li>
+					<li><a class="navA" href="math.html">Math for Computing</a></li>
+					<li><a class="navA" href="networking.html">Intro to Networking</a></li>
+					<li><a class="navA" href="Software_engineering.html">Software Engineering</a></li>
+					<li><a class="navA" href="java_quiz.html">Quizzes</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- main body of the page -->
+		<main>
+			<!-- body header -->
+			<header id="body_header">
+				<h1>Java Lessons</h1>
+				<div id="breadcrumb">
+				<a href="index.html">Home</a>
+				&gt;
+				<a href="java.html">Java</a>
+				&gt;
+				<p>Java Lessons</p>
+				</div>
+			</header>
+			<button id="expandBtn" onclick="expand()">&#9654;</button>
+			<button id="collapseBtn" onclick="collapse()">&#9664;</button>
+			<!-- section of the page on the left  -->
+			<aside id="aside">
+				<h3>Content</h3>
+				<p>Intro to object-oriented programming</p>
+				<ul>
+					<li><a href="#" onclick = "replace(this)" id="link1">Programs</a></li>
+					<li><a href="#" onclick = "replace(this)" id="link2">Computers</a></li>
+					<li><a href="#">Objects</a></li>
+					<li><a href="#">Classes</a></li>
+					<li><a href="java_quiz.html"  class="quiz">Quiz</a></li>
+				</ul>
+				<p>Writing Java code</p>
+				<ul>
+					<li><a href="#">Starting to write Java code</a></li>
+					<li><a href="#">The CodePad in BlueJ</a></li>
+					<li><a href="#">Variables</a></li>
+					<li><a href="#">Operators</a></li>
+					<li><a href="java_quiz.html" class="quiz">Quiz</a></li>
+				</ul>
+				<p>Defining classes</p>
+				<ul>
+					<li><a href="#">Code blocks</a></li>
+					<li><a href="#">Creating a class</a></li>
+					<li><a href="#">Fields</a></li>
+					<li><a href="#">Constructors</a></li>
+					<li><a href="java_quiz.html"  class="quiz">Quiz</a></li>
+				</ul>
+				<p>Adding methods to classes</p>
+				<ul id = "lastUl">
+					<li><a href="#">Methods</a></li>
+					<li><a href="#">Defining a method</a></li>
+					<li><a href="#">Calling a method</a></li>
+					<li><a href="#" >Scope of variables</a></li>
+				</ul>
+			</aside>
+			<!-- section to the right of the aside box -->
+			<section class="clearfix">
+				<div id="content1">
+					<h3 id = "titlePara1">Programs</h3>
+					<p>
+						To get a computer to do a job, you need to give it instructions in a language that it can understand. Computers are able to understand, a range of languages that have more limited vocabulary and stricter rules than the natural languages that humans speak. These are known as programming languages. The language you will be learning to use in this module is called Java.
+					</p>
+					<p>
+						You often want a computer to do the same job over and over again. Most jobs require a sequence of many instructions to be carried out. Rather than requiring a user to issue these instructions every time, it is better to assemble them into a collection of instructions, known as a program, which can be executed, or run, each time the job needs to be done. The text that defines the instructions is known as program code. Programs are often known as software, in contrast to the physical components of a computer, which are known as hardware.
+					</p>
+					<p>
+						Programming is the process of developing a program by writing code in a programming language, and is one of the key skills needed by a Computing professional
+					</p>
+				</div>
+				<div id="content2">
+					<p id="titlePara2">Computers</p>
+					<p>
+						In the early 1960’s there were a few thousand computers in the world, and these were large systems that would each fill an entire room. Nowadays, as well as the billions of personal computers and laptops which are in use, computers are all around us in places which are not all obvious. Many people carry smartphones which are actually sophisticated computers which can run a huge range of programs, or apps.
+					</p>
+					<p>
+						Computers are embedded in many everyday products, such as cars, washing machines, smart televisions and so on, and these computers have been programmed to provide ways of controlling the functions of these items. When you browse the web, for example to shop online, you are interacting, not just with the device you are holding or sitting in front of, but also over the internet with powerful computers known as servers which are programmed to provide the functions of the web sites you use.
+					</p>
+					<p>
+						In all these cases, the computer will not do anything useful unless it is programmed to do so. For example, when you use the on-screen schedule guide on a modern television you are running a program which a programmer has written to instruct the computer that is built into the television.
+					</p>
+				</div>
+			</section>
+		</main>
+		<!-- footer of the page -->
+		<footer>
+			<ul>
+				<li><a href="https://www.facebook.com" class="footerA" id="fb"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="https://www.twitter.com" class="footerA" id="twitter"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="http://www.youtube.com" class="footerA" id="youtube"><i class="fa fa-youtube"></i></a></li>
+				<li><a href="http://www.instagram.com" class="footerA" id="ig"><i class="fa fa-instagram"></i></a></li>
+			</ul>
+			<p id="copyright">&copy;2017. All rights reserved. Powered by Injera.</p>
+		</footer>
+		<script type="text/javascript" src = "js/common.js"></script>
+		<script type="text/javascript" src = "js/lessons.js"></script>
+	</body>
+</html>

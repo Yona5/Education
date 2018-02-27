@@ -1,0 +1,226 @@
+/*body header*/
+#body_header{
+	position: relative;
+	background-image: url("../img/com.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	height: 200px;
+}
+/*course title*/
+#body_header h1{
+	text-align: center;
+	margin-top: 0px;
+	padding-top: 60px;
+	color: white;
+	font-size: 3em;
+}
+/*navigational aid*/
+#breadcrumb{
+	max-width: 50%;
+	margin:auto;
+	text-align: center;
+	color:white;
+}
+#breadcrumb a{
+	text-decoration: none;
+	color: white;
+}
+#breadcrumb p{
+	display: inline;
+}
+#breadcrumb a:hover{
+	text-decoration: underline;
+}
+#intro_para{
+	width:60%;
+	color:grey;
+	line-height: 170%;
+}
+/*the main part of the page*/
+section{
+	width: 90%;
+	margin:auto;
+}
+section h2{
+	font-weight: normal;
+}
+table{
+	width: 100%;
+}
+table td{
+	border:1px solid grey;
+	padding:10px;
+	border-right-style: none;
+	border-left-style: none;
+	color: grey;
+}
+table, td{
+	border-collapse: collapse;
+}
+h2 i{
+	color: #5382A1;
+	width: 50px;
+	font-size: 30px !important;
+}
+/*table icons*/
+tr i{
+	color: #5382A1;
+	width: 50px;
+	font-size: 23px !important;
+}
+hr{
+	height: 1px;
+	border: none;
+	background-color: darkgrey;
+}
+.main_section{
+	margin-bottom: 45px;
+}
+.main_section h2{
+	font-weight: normal;
+	width:50%;
+	padding-bottom: 70px;
+	float: left;
+	color: grey;
+}
+.main_section p a{
+	text-decoration: none;
+	color: grey;
+}
+.main_section p a:hover{
+	text-decoration: underline;
+}
+/*clearing float*/
+.main_section::after{
+	content: "";
+	clear:both;
+	display: block;
+}
+#start{
+	display: block;
+	text-align: center;
+	width: 200px;
+	margin:auto;
+	font-size: 20px;
+	margin-bottom: 20px;
+	text-decoration: none;
+	color: white;
+	font-weight: normal;
+	background-color: #5382A1;
+	padding:5px;
+}
+/*contact form*/
+#contact{
+	color:grey;
+}
+#contact input{
+	border: 1px solid lightgrey;
+	margin-bottom: 10px;
+	height: 30px;
+	width: 40%;
+	background-color: #f7f8f9;
+	padding-left: 10px;
+	border-radius: 5px;
+}
+#contact textarea{
+	background-color: #f7f8f9;
+	border: 1px solid lightgrey;
+	margin-bottom: 10px;
+	width:40%;
+	height: 70px;
+	padding-left: 10px;
+	padding-top:10px;
+	border-radius: 5px;
+}
+form input[type = "submit"]{
+	width: 70px !important;
+	color: grey !important;
+	text-align: left !important;
+}
+
+@media screen and (max-width: 936px){
+	/*hidding the logo*/
+	#logo{
+	display: none;
+	}
+	/*displaying the menu*/
+	#threeLine{
+		display: block;	
+	}
+	#threeLine:hover, #close:hover{
+		color: black;
+		cursor:pointer;
+	}
+	/*hidding the nav*/
+	#navUl{
+		display: none;
+	}
+	#body_header h1{
+		font-size: 2em;
+	}
+	.main_section{
+		margin-bottom: 20px;
+		background-color: white;
+		border-radius: 3px;
+	}
+	hr{
+		display: none;
+	}	
+	#intro_para{
+		padding:15px;
+		width: 90%;
+	}
+	table{
+		padding: 10px;
+	}
+	table, td{
+		border-collapse: separate;
+	}
+	table td{
+		border:1px solid grey;
+		padding:10px;
+		border-right-style:solid;
+		border-left-style:solid;
+	}
+	/*table icons*/
+	tr i{
+		width: 50px;
+	}
+	.main_section h2{
+		float:none;
+		width: 95%;
+		margin:auto;
+		font-size: 1.5em;
+		padding-bottom:0px;
+		padding-top:10px;
+	}
+	/*section icons*/
+	.sectionH2 i{
+		display: none;
+	}
+	.sub_topic{
+		width: 95%;
+		margin:auto;
+		padding-top: 20px;
+	}
+	.sub_topic_last{
+		padding-bottom: 25px;
+	}
+	#start{
+		text-align: left;
+		padding-left: 15px;
+		margin-left: 0px;
+		width: 150px;
+	}
+	#contact form, #contact p{
+		margin-left: 15px;
+	}
+	#contact input, #contact textarea{
+		width: 70%;
+	}
+
+	#contactP{
+		padding-top: 10px;
+	}
+
+}

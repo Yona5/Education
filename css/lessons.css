@@ -1,0 +1,120 @@
+/*body header*/
+#body_header{
+	position: relative;
+	background-image: url("../img/com.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	height: 200px;
+}
+#body_header h1 {
+	text-align: center;
+	margin-top: 0px;
+	padding-top: 60px;
+	color: white;
+	font-size: 3em;
+}
+/*navigational aid*/
+#breadcrumb{
+	max-width: 50%;
+	margin:auto;
+	text-align: center;
+	color:white;
+}
+#breadcrumb a{
+	text-decoration: none;
+	color: white;
+}
+#breadcrumb p{
+	display: inline;
+}
+/*displaying and hiding content*/
+#expandBtn, #collapseBtn{
+	display: none;
+	position: fixed;
+	top:50%;
+	left: 0px;
+	border:none;
+	background-color: #E9EBEE;
+	font-size: 30px;
+	color:#5382A1;
+	cursor: pointer;
+}
+/*left side of the body*/
+aside{
+	width: 35%;
+	float: left;
+	margin-left: 50px;
+	margin-top: 50px;
+	color:grey;
+}
+aside a{
+	text-decoration: none;
+	color:grey;
+}
+aside li{
+	list-style-type: none;
+}
+aside p{
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+aside ul{
+	margin: 0px;
+	padding:0px;
+}
+/*clearing float*/
+.clearfix::after{
+	content: "";
+	clear:both;
+	display: block;
+}
+section{
+	width: 60%;
+	margin: auto;
+	margin-top: 50px;
+	color:grey;
+}
+section p{
+	line-height: 150%;
+}
+#titlePara1, #titlePara2{
+	font-size: 22px;
+}
+#content2{
+	display: none;
+}
+#lastUl{
+	margin-bottom: 20px;
+}
+#link1:hover, #link2:hover, .quiz:hover{
+	text-decoration: underline;
+}
+@media screen and (max-width: 936px){
+	#logo{
+	display: none;
+	}
+	/*menu*/
+	#threeLine{
+		display: block;	
+	}
+	#threeLine:hover, #close:hover{
+		color: black;
+		cursor:pointer;
+	}
+	/*navigation unordered list*/
+	#navUl{
+		display: none;
+	}
+	#body_header h1{
+		font-size: 2.5em;
+	}
+	#expandBtn{
+		display: block;
+	}
+	aside{
+		display: none;
+	}
+	section{
+		width: 80%;
+	}
+}
